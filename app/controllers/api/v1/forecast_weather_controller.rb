@@ -3,7 +3,7 @@ class Api::V1::ForecastWeatherController < ApplicationController
     if params[:location]
       location = CoordinatesFacade.find_coordinates(params[:location])
       weather = WeatherFacade.find_weather_forecast(location.lat, location.long)
-      render json: ForecastWeatherSerializer.new(weather)
+      render json: ForecastSerializer.new(weather)
     else
       render json: { error: 'Please provide a location' }, status: :bad_request
     end

@@ -740,10 +740,12 @@
           null
         ]
       },
-      "/Users/aliciahenzler/turing/mod 3/projects/finial_project/sweater_weather/app/serializers/forecast_weather_serializer.rb": {
+      "/Users/aliciahenzler/turing/mod 3/projects/finial_project/sweater_weather/app/serializers/forecast_serializer.rb": {
         "lines": [
           1,
           1,
+          1,
+          null,
           1,
           null
         ]
@@ -831,6 +833,6 @@
         ]
       }
     },
-    "timestamp": 1628532222
+    "timestamp": 1628539219
   }
 }
