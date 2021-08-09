@@ -41,20 +41,11 @@ RSpec.describe 'Daily Weather' do
               "uvi": 7.89}
     data = DailyWeather.new(boise)
 
-    expect(data.datetime).to be_a(String)
+    expect(data.date).to be_a(String)
     expect(data.sunrise).to be_a(String)
     expect(data.sunset).to be_a(String)
     expect(data.max_temp).to be_a(Integer).or be_a(Float)
     expect(data.min_temp).to be_a(Integer).or be_a(Float)
-    expect(data.pressure).to be_a(Integer).or be_a(Float)
-    expect(data.humidity).to be_a(Integer).or be_a(Float)
-    expect(data.dewpoint).to be_a(Integer).or be_a(Float)
-    expect(data.uvi).to be_a(Integer).or be_a(Float)
-    expect(data.clouds).to be_a(Integer).or be_a(Float)
-    expect(data.wind_speed).to be_a(Integer).or be_a(Float)
-    expect(data.wind_deg).to be_a(Integer).or be_a(Float)
-    expect(data.wind_gust).to be_a(Integer).or be_a(Float)
     expect(data.conditions).to be_a(String)
-    expect(data.description).to be_a(String)
   end
 end
