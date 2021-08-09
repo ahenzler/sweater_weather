@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&location=Boise,ID
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&location=boise,id
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 09 Aug 2021 17:55:50 GMT
+      - Mon, 09 Aug 2021 17:55:45 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 09 Aug 2021 17:55:50 GMT
+      - Mon, 09 Aug 2021 17:55:45 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=8D2090072D44B784BD64F28138AE4605; Path=/; HttpOnly
+      - JSESSIONID=67A9A7678A4CF57C9B4AC24FBDEC3508; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -50,9 +50,9 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Boise,ID"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Boise","adminArea5Type":"City","adminArea4":"Ada
-        County","adminArea4Type":"County","adminArea3":"ID","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282087392","unknownInput":"","type":"s","latLng":{"lat":43.615791,"lng":-116.201579},"displayLatLng":{"lat":43.615791,"lng":-116.201579},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=43.615791,-116.201579|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-304412987"}]}]}'
-  recorded_at: Mon, 09 Aug 2021 17:55:50 GMT
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"boise,id"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Boise","adminArea5Type":"City","adminArea4":"Ada
+        County","adminArea4Type":"County","adminArea3":"ID","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282087392","unknownInput":"","type":"s","latLng":{"lat":43.615791,"lng":-116.201579},"displayLatLng":{"lat":43.615791,"lng":-116.201579},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=43.615791,-116.201579|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-407051861"}]}]}'
+  recorded_at: Mon, 09 Aug 2021 17:55:45 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=996a17d6a6c5c2aadbc085a736f62c0e&exclude=minutely,alerts&lat=43.615791&lon=-116.201579&units=imperial
@@ -74,7 +74,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 09 Aug 2021 17:55:50 GMT
+      - Mon, 09 Aug 2021 17:55:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -91,7 +91,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":43.6158,"lon":-116.2016,"timezone":"America/Boise","timezone_offset":-21600,"current":{"dt":1628531747,"sunrise":1628512992,"sunset":1628564245,"temp":71.06,"feels_like":69.6,"pressure":1016,"humidity":37,"dew_point":43.5,"uvi":6.36,"clouds":0,"visibility":10000,"wind_speed":9.57,"wind_deg":298,"wind_gust":9.71,"weather":[{"id":800,"main":"Clear","description":"clear
+      string: '{"lat":43.6158,"lon":-116.2016,"timezone":"America/Boise","timezone_offset":-21600,"current":{"dt":1628531746,"sunrise":1628512992,"sunset":1628564245,"temp":71.06,"feels_like":69.6,"pressure":1016,"humidity":37,"dew_point":43.5,"uvi":6.36,"clouds":0,"visibility":10000,"wind_speed":9.57,"wind_deg":298,"wind_gust":9.71,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}]},"hourly":[{"dt":1628528400,"temp":71.17,"feels_like":69.58,"pressure":1016,"humidity":34,"dew_point":41.4,"uvi":4.54,"clouds":0,"visibility":10000,"wind_speed":9.42,"wind_deg":300,"wind_gust":10.2,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1628532000,"temp":71.06,"feels_like":69.6,"pressure":1016,"humidity":37,"dew_point":43.5,"uvi":6.36,"clouds":0,"visibility":10000,"wind_speed":9.57,"wind_deg":298,"wind_gust":9.71,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1628535600,"temp":72.43,"feels_like":70.92,"pressure":1016,"humidity":33,"dew_point":41.74,"uvi":7.61,"clouds":0,"visibility":10000,"wind_speed":9.82,"wind_deg":297,"wind_gust":9.73,"weather":[{"id":800,"main":"Clear","description":"clear
@@ -149,5 +149,5 @@ http_interactions:
         sky","icon":"01d"}],"clouds":6,"pop":0.04,"uvi":9},{"dt":1629054000,"sunrise":1629031798,"sunset":1629082123,"moonrise":1629061140,"moonset":1629007800,"moon_phase":0.25,"temp":{"day":84.27,"min":69.06,"max":93.63,"night":81.48,"eve":93.63,"morn":69.06},"feels_like":{"day":82.83,"night":79.3,"eve":89.01,"morn":68.92},"pressure":1014,"humidity":35,"dew_point":52.32,"wind_speed":13.78,"wind_deg":282,"wind_gust":15.66,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"clouds":28,"pop":0.69,"rain":1.45,"uvi":9},{"dt":1629140400,"sunrise":1629118266,"sunset":1629168432,"moonrise":1629152100,"moonset":1629096180,"moon_phase":0.29,"temp":{"day":80.33,"min":66.13,"max":80.62,"night":71.55,"eve":80.62,"morn":66.13},"feels_like":{"day":79.39,"night":70.93,"eve":80.02,"morn":64.18},"pressure":1006,"humidity":30,"dew_point":45.16,"wind_speed":11.23,"wind_deg":312,"wind_gust":14.85,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":100,"pop":0.12,"uvi":9}]}'
-  recorded_at: Mon, 09 Aug 2021 17:55:50 GMT
+  recorded_at: Mon, 09 Aug 2021 17:55:46 GMT
 recorded_with: VCR 6.0.0
