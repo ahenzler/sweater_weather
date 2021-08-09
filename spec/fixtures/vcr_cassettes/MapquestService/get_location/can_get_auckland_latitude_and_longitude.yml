@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&location=Auckland,NZ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.7.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 09 Aug 2021 15:51:35 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1027'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 09 Aug 2021 15:51:35 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=7ABDEF466900AB80D12E73F99C06C447; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Auckland,NZ"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Auckland","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"AUCKLAND","adminArea3Type":"State","adminArea1":"NZ","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"283516126","unknownInput":"","type":"s","latLng":{"lat":-36.853467,"lng":174.765551},"displayLatLng":{"lat":-36.853467,"lng":174.765551},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=-36.853467,174.765551|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-5587942"}]}]}'
+  recorded_at: Mon, 09 Aug 2021 15:51:35 GMT
+recorded_with: VCR 6.0.0

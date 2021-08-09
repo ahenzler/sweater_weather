@@ -1,22 +1,19 @@
-class MapQuestService
+class MapquestService
+  class << self
 
-  def self.get_coordinates(city, state)
-    new.request_api("/geocoding/v1/address?location=#{city},#{state}")
-  end
-
-  def request_api(path)
-    response = conn("http://www.mapquestapi.com").get(path) do |faraday|
-      faraday.params['key'] = ENV['mapquest_key']
+    def get_address_location(location)
+      response = conn.get("/geocoding/v1/address?key=#{ENV['MAPQUEST_API']}&location=#{location}")
+      parse_json(response)
     end
 
-    parse_json(response)
-  end
+    private
 
-  def parse_json(response)
-    JSON.parse(response.body, symbolize_names: true)
-  end
+    def conn
+      Faraday.new('http://www.mapquestapi.com')
+    end
 
-  def conn(url)
-    Faraday.new(url)
+    def parse_json(response)
+      JSON.parse(response.body, symbolize_names: true)
+    end
   end
 end
