@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 09 Aug 2021 23:02:41 GMT
+      - Mon, 09 Aug 2021 23:02:39 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 09 Aug 2021 23:02:41 GMT
+      - Mon, 09 Aug 2021 23:02:39 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=BE1F9B4F8CAA10060448E7E1BA7A4811; Path=/; HttpOnly
+      - JSESSIONID=3C85639B6FFD680E50025A45C85F8AC3; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Boise,ID"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Boise","adminArea5Type":"City","adminArea4":"Ada
-        County","adminArea4Type":"County","adminArea3":"ID","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282087392","unknownInput":"","type":"s","latLng":{"lat":43.615791,"lng":-116.201579},"displayLatLng":{"lat":43.615791,"lng":-116.201579},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=43.615791,-116.201579|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-814120520"}]}]}'
-  recorded_at: Mon, 09 Aug 2021 23:02:41 GMT
+        County","adminArea4Type":"County","adminArea3":"ID","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282087392","unknownInput":"","type":"s","latLng":{"lat":43.615791,"lng":-116.201579},"displayLatLng":{"lat":43.615791,"lng":-116.201579},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=43.615791,-116.201579|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1520909859"}]}]}'
+  recorded_at: Mon, 09 Aug 2021 23:02:39 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=996a17d6a6c5c2aadbc085a736f62c0e&exclude=minutely,alerts&lat=43.615791&lon=-116.201579&units=imperial
@@ -74,7 +74,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 09 Aug 2021 23:02:42 GMT
+      - Mon, 09 Aug 2021 23:02:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -91,7 +91,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":43.6158,"lon":-116.2016,"timezone":"America/Boise","timezone_offset":-21600,"current":{"dt":1628550158,"sunrise":1628512992,"sunset":1628564245,"temp":81.1,"feels_like":79.54,"pressure":1016,"humidity":25,"dew_point":41.99,"uvi":3.61,"clouds":0,"visibility":10000,"wind_speed":11.68,"wind_deg":306,"wind_gust":12.46,"weather":[{"id":800,"main":"Clear","description":"clear
+      string: '{"lat":43.6158,"lon":-116.2016,"timezone":"America/Boise","timezone_offset":-21600,"current":{"dt":1628550159,"sunrise":1628512992,"sunset":1628564245,"temp":81.1,"feels_like":79.54,"pressure":1016,"humidity":25,"dew_point":41.99,"uvi":3.61,"clouds":0,"visibility":10000,"wind_speed":11.68,"wind_deg":306,"wind_gust":12.46,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}]},"hourly":[{"dt":1628550000,"temp":81.1,"feels_like":79.54,"pressure":1016,"humidity":25,"dew_point":41.99,"uvi":3.61,"clouds":0,"visibility":10000,"wind_speed":11.68,"wind_deg":306,"wind_gust":12.46,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1628553600,"temp":81.54,"feels_like":79.7,"pressure":1015,"humidity":23,"dew_point":40.21,"uvi":1.88,"clouds":0,"visibility":10000,"wind_speed":11.72,"wind_deg":311,"wind_gust":12.88,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1628557200,"temp":81.54,"feels_like":79.61,"pressure":1014,"humidity":21,"dew_point":37.87,"uvi":0.73,"clouds":0,"visibility":10000,"wind_speed":11.36,"wind_deg":319,"wind_gust":12.77,"weather":[{"id":800,"main":"Clear","description":"clear
@@ -149,7 +149,7 @@ http_interactions:
         rain","icon":"10d"}],"clouds":83,"pop":0.2,"rain":0.15,"uvi":9},{"dt":1629054000,"sunrise":1629031798,"sunset":1629082123,"moonrise":1629061140,"moonset":1629007800,"moon_phase":0.25,"temp":{"day":90.59,"min":71.28,"max":94.17,"night":82.17,"eve":94.06,"morn":71.28},"feels_like":{"day":86.7,"night":79.93,"eve":89.47,"morn":70.27},"pressure":1013,"humidity":18,"dew_point":40.15,"wind_speed":10.87,"wind_deg":316,"wind_gust":15.7,"weather":[{"id":801,"main":"Clouds","description":"few
         clouds","icon":"02d"}],"clouds":12,"pop":0,"uvi":9},{"dt":1629140400,"sunrise":1629118266,"sunset":1629168432,"moonrise":1629152100,"moonset":1629096180,"moon_phase":0.29,"temp":{"day":75.22,"min":68.56,"max":81.19,"night":68.56,"eve":80.02,"morn":69.04},"feels_like":{"day":73.8,"night":65.86,"eve":78.22,"morn":67.39},"pressure":1007,"humidity":29,"dew_point":39.61,"wind_speed":21.3,"wind_deg":304,"wind_gust":25.08,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"clouds":60,"pop":0,"uvi":9}]}'
-  recorded_at: Mon, 09 Aug 2021 23:02:42 GMT
+  recorded_at: Mon, 09 Aug 2021 23:02:40 GMT
 - request:
     method: get
     uri: https://api.openbrewerydb.org/breweries?by_dist=43.615791,-116.201579&per_page=5
@@ -173,7 +173,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 09 Aug 2021 23:02:42 GMT
+      - Mon, 09 Aug 2021 23:02:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -181,9 +181,9 @@ http_interactions:
       Etag:
       - W/"a011d81774046bf5bb46c26ba887ec5d"
       X-Request-Id:
-      - a4df74ce-515c-4fd4-abe7-78d53be6069d
+      - d92da484-f95c-44a0-99b1-0ffb16d60bc5
       X-Runtime:
-      - '0.031734'
+      - '0.163543'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -207,5 +207,5 @@ http_interactions:
         Brewing Company - Pub on 10th","brewery_type":"brewpub","street":"205 N 10th
         St","address_2":null,"address_3":null,"city":"Boise","state":"Idaho","county_province":null,"postal_code":"83702-5773","country":"United
         States","longitude":"-116.206021","latitude":"43.623807","phone":"2089725900","website_url":"http://www.edgebrew.com","updated_at":"2020-10-11T00:00:00.000Z","created_at":"2020-10-11T00:00:00.000Z"}]'
-  recorded_at: Mon, 09 Aug 2021 23:02:42 GMT
+  recorded_at: Mon, 09 Aug 2021 23:02:40 GMT
 recorded_with: VCR 6.0.0

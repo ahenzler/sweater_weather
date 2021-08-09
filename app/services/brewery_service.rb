@@ -1,8 +1,8 @@
 class BreweryService
   class << self
 
-    def get_breweries(lat_long, quantity)
-      response = conn.get("/breweries?by_dist=#{lat_long[0]},#{lat_long[1]}&per_page=#{quantity}")
+    def get_breweries(location, quantity)
+      response = conn.get("/breweries?by_dist=#{location[0]},#{location[1]}&per_page=#{quantity}")
       parse_json(response)
     end
 
