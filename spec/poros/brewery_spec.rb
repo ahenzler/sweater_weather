@@ -15,9 +15,9 @@ RSpec.describe 'Brewery' do
     expect(boise.breweries.length).to be(5)
     expect(boise.breweries.first[:id]).to be_a(Integer)
     expect(boise.breweries.first[:name]).to be_a(String)
-    expect(boise.breweries.first[:brew_type]).to be_a(String)
-    expect(boise.forecast).to be_a(Array)
+    expect(boise.breweries.first[:brewery_type]).to be_a(String)
+    expect(boise.forecast).to be_a(Hash)
     expect(boise.forecast[:summary]).to be_a(String)
-    expect(boise.forecast[:temperture]).to be_a(Integer).or(be_a(Float))
+    expect(boise.forecast[:temperture]).to be_a(String)
   end
 end
