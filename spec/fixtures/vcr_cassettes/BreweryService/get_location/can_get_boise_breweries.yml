@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 09 Aug 2021 21:25:08 GMT
+      - Mon, 09 Aug 2021 22:08:23 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 09 Aug 2021 21:25:08 GMT
+      - Mon, 09 Aug 2021 22:08:23 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=9E5AF27E05B09E3079443B5287570DFA; Path=/; HttpOnly
+      - JSESSIONID=7B602FD31A687F1929E8401956C4A64B; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Boise,ID"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Boise","adminArea5Type":"City","adminArea4":"Ada
-        County","adminArea4Type":"County","adminArea3":"ID","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282087392","unknownInput":"","type":"s","latLng":{"lat":43.615791,"lng":-116.201579},"displayLatLng":{"lat":43.615791,"lng":-116.201579},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=43.615791,-116.201579|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-419255363"}]}]}'
-  recorded_at: Mon, 09 Aug 2021 21:25:08 GMT
+        County","adminArea4Type":"County","adminArea3":"ID","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282087392","unknownInput":"","type":"s","latLng":{"lat":43.615791,"lng":-116.201579},"displayLatLng":{"lat":43.615791,"lng":-116.201579},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=43.615791,-116.201579|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1901635646"}]}]}'
+  recorded_at: Mon, 09 Aug 2021 22:08:23 GMT
 - request:
     method: get
     uri: https://api.openbrewerydb.org/breweries?by_dist=43.615791,-116.201579&per_page=5
@@ -76,7 +76,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 09 Aug 2021 21:25:09 GMT
+      - Mon, 09 Aug 2021 22:08:23 GMT
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -84,9 +84,9 @@ http_interactions:
       Etag:
       - W/"a011d81774046bf5bb46c26ba887ec5d"
       X-Request-Id:
-      - 5effc435-66c7-4287-97b8-7e306db8b82e
+      - a73ccbb4-358a-447a-8ecb-bd6365e93dd9
       X-Runtime:
-      - '0.031891'
+      - '0.030561'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Vary:
@@ -110,5 +110,5 @@ http_interactions:
         Brewing Company - Pub on 10th","brewery_type":"brewpub","street":"205 N 10th
         St","address_2":null,"address_3":null,"city":"Boise","state":"Idaho","county_province":null,"postal_code":"83702-5773","country":"United
         States","longitude":"-116.206021","latitude":"43.623807","phone":"2089725900","website_url":"http://www.edgebrew.com","updated_at":"2020-10-11T00:00:00.000Z","created_at":"2020-10-11T00:00:00.000Z"}]'
-  recorded_at: Mon, 09 Aug 2021 21:25:09 GMT
+  recorded_at: Mon, 09 Aug 2021 22:08:23 GMT
 recorded_with: VCR 6.0.0
