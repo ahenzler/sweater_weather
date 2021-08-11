@@ -8,14 +8,14 @@ class Route
     @id = nil
     @hours_to_arrival = nil
     @days_to_arrival = nil
-    @start_city = "#{data[:route][:locations][0][:adminArea5]}, #{data[:route][:locations][0][:adminArea3]}"
-    @end_city = "#{data[:route][:locations][1][:adminArea5]}, #{data[:route][:locations][1][:adminArea3]}"
-    @travel_time = "#{data[:route][:formattedTime].split(":")[0]} hour(s), #{data[:route][:formattedTime].split(":")[1]} minute(s)"
+    @start_city = "#{data[:locations][0][:adminArea5]}, #{data[:locations][0][:adminArea3]}"
+    @end_city = "#{data[:locations][1][:adminArea5]}, #{data[:locations][1][:adminArea3]}"
+    @travel_time = "#{data[:formattedTime].split(":")[0]} hour(s), #{data[:formattedTime].split(":")[1]} minute(s)"
     @forecast = forecast
-    if data[:route][:formattedTime].split(":")[0].to_i < 8
-      @hours_to_arrival = data[:route][:formattedTime].split(":")[0].to_i
-    elsif data[:route][:formattedTime].split(":")[0].to_i > 8
-      @days_to_arrival = data[:route][:formattedTime].split(":")[0].to_i.fdiv(24).round
+    if data[:formattedTime].split(":")[0].to_i < 8
+      @hours_to_arrival = data[:formattedTime].split(":")[0].to_i
+    elsif data[:formattedTime].split(":")[0].to_i > 8
+      @days_to_arrival = data[:formattedTime].split(":")[0].to_i.fdiv(24).round
     end
   end
 
