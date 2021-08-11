@@ -1,7 +1,7 @@
 class BackgroundService
   class << self
     def get_background(city_state_names)
-      response = conn.get("/search/photos?client_id=#{ENV['BACKGROUND_API']}&per_page=1&query=#{'city_state_names'}")
+      response = conn.get("/search/photos?client_id=#{ENV['BACKGROUND_API']}&per_page=1&query=#{'city_state_names'},cityscape")
       parse_json(response)
     end
 
