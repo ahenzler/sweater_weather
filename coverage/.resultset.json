@@ -604,6 +604,21 @@
           null
         ]
       },
+      "/Users/aliciahenzler/turing/mod 3/projects/finial_project/sweater_weather/spec/services/background_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/aliciahenzler/turing/mod 3/projects/finial_project/sweater_weather/spec/services/brewery_service_spec.rb": {
         "lines": [
           1,
@@ -977,8 +992,30 @@
           null,
           null
         ]
+      },
+      "/Users/aliciahenzler/turing/mod 3/projects/finial_project/sweater_weather/app/services/background_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1628553055
+    "timestamp": 1628679926
   }
 }
