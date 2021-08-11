@@ -42,8 +42,8 @@ RSpec.describe 'MapquestService' do
   end
 
   describe 'get route' do
-    it 'can get a response for the route and estimated travel time' do
-      response = MapService.get_route("Charlotte, NC", "Galveston, TX")
+    it 'can get a response for the route and estimated travel time' , :vcr do
+      response = MapquestService.get_route("Boise,ID", "Denver,CO")
 
       expect(response).to be_a(Hash)
       expect(response[:route]).to be_a(Hash)

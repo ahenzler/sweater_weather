@@ -1,7 +1,7 @@
 class Api::V1::BreweriesController < ApplicationController
   def index
     if params[:location] && params[:quantity]
-      location = CoordinatesFacade.find_coordinates(:location)
+      location = CoordinatesFacade.find_coordinates(params[:location])
       brewery = BreweriesFacade.find_city_current_weather_and_breweries(params[:location], [location.lat, location.long], params[:quantity])
       render json: BrewerySerializer.new(brewery)
     else
