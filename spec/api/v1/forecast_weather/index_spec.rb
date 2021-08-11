@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe '' do
+RSpec.describe 'forecast weather' do
   describe 'happy path' do
     it 'can get a city\'s current weather', :vcr do
       get '/api/v1/forecast_weather', params: {location: "boise,id,"}

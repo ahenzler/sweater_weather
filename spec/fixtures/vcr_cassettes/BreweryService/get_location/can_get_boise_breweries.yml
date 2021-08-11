@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&location=Boise,ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.7.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 11 Aug 2021 14:53:43 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1026'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Wed, 11 Aug 2021 14:53:43 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=F04EB51857180A6BD2004089EEBF2003; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Boise,ID"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Boise","adminArea5Type":"City","adminArea4":"Ada
+        County","adminArea4Type":"County","adminArea3":"ID","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282087392","unknownInput":"","type":"s","latLng":{"lat":43.615791,"lng":-116.201579},"displayLatLng":{"lat":43.615791,"lng":-116.201579},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=43.615791,-116.201579|marker-sm-50318A-1&scalebar=true&zoom=12&rand=533817794"}]}]}'
+  recorded_at: Wed, 11 Aug 2021 14:53:43 GMT
+- request:
+    method: get
+    uri: https://api.openbrewerydb.org/breweries?by_dist=43.615791,-116.201579&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.7.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 11 Aug 2021 14:53:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - max-age=86400, public
+      Etag:
+      - W/"a011d81774046bf5bb46c26ba887ec5d"
+      X-Request-Id:
+      - 638761a0-a2ac-446f-a36a-fa3facc47432
+      X-Runtime:
+      - '0.032773'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":8038,"obdb_id":"10-barrel-brewing-co-boise-boise","name":"10
+        Barrel Brewing Co - Boise","brewery_type":"large","street":"826 W Bannock
+        St","address_2":null,"address_3":null,"city":"Boise","state":"Idaho","county_province":null,"postal_code":"83702-5857","country":"United
+        States","longitude":"-116.202929","latitude":"43.618516","phone":"2083445870","website_url":"http://www.10barrel.com","updated_at":"2020-10-11T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":8617,"obdb_id":"barbarian-brewing-downtown-taproom-boise","name":"Barbarian
+        Brewing - Downtown Taproom","brewery_type":"micro","street":"1022 W Main St","address_2":null,"address_3":null,"city":"Boise","state":"Idaho","county_province":null,"postal_code":"83702-5705","country":"United
+        States","longitude":"-116.206883","latitude":"43.618407","phone":"2083872739","website_url":"https://barbarianbrewing.com","updated_at":"2020-10-11T00:00:00.000Z","created_at":"2020-10-11T00:00:00.000Z"},{"id":15804,"obdb_id":"woodland-empire-ale-craft-boise","name":"Woodland
+        Empire Ale Craft","brewery_type":"micro","street":"1114 W Front St","address_2":null,"address_3":null,"city":"Boise","state":"Idaho","county_province":null,"postal_code":"83702-6951","country":"United
+        States","longitude":"-116.2086811","latitude":"43.616091","phone":"2086029318","website_url":"http://www.woodlandempire.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":15675,"obdb_id":"white-dog-brewing-boise-boise","name":"White
+        Dog Brewing Boise","brewery_type":"micro","street":"705 W Fulton St","address_2":null,"address_3":null,"city":"Boise","state":"Idaho","county_province":null,"postal_code":"83702","country":"United
+        States","longitude":"-116.2062186","latitude":"43.61122761","phone":"2089060609","website_url":"http://www.whitedogbrewing.com","updated_at":"2018-08-24T00:00:00.000Z","created_at":"2018-07-24T00:00:00.000Z"},{"id":10393,"obdb_id":"edge-brewing-company-pub-on-10th-boise","name":"Edge
+        Brewing Company - Pub on 10th","brewery_type":"brewpub","street":"205 N 10th
+        St","address_2":null,"address_3":null,"city":"Boise","state":"Idaho","county_province":null,"postal_code":"83702-5773","country":"United
+        States","longitude":"-116.206021","latitude":"43.623807","phone":"2089725900","website_url":"http://www.edgebrew.com","updated_at":"2020-10-11T00:00:00.000Z","created_at":"2020-10-11T00:00:00.000Z"}]'
+  recorded_at: Wed, 11 Aug 2021 14:53:44 GMT
+recorded_with: VCR 6.0.0
