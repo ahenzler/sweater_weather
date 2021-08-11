@@ -40,4 +40,13 @@ RSpec.describe 'MapquestService' do
       expect(response[:results][0][:locations][0][:latLng][:lng]).to be_a(Float)
     end
   end
+
+  describe 'get route' do
+    it 'can get a response for the route and estimated travel time' do
+      response = MapService.get_route("Charlotte, NC", "Galveston, TX")
+
+      expect(response).to be_a(Hash)
+      expect(response[:route]).to be_a(Hash)
+    end
+  end
 end
