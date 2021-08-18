@@ -3,8 +3,10 @@ rbenv:
 - 2.7.2
 services:
   - postgresql
+before_install:
+  - gem install bundler -v '2.2.24'
 before_script:
-  - bundle config set --local deployment 'true'
+  - bundle install
   - bundle exec rake db:create
   - bundle exec rake db:migrate
 script:
