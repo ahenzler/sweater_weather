@@ -284,7 +284,9 @@ DEPENDENCIES
   webmock
 
 RUBY VERSION
-   ruby 2.7.2p137
+  ruby 2.7.2p137
 
 BUNDLED WITH
-   2.2.24
+  2.2.24
+
+bundle lock --add-platform x86_64-linux
