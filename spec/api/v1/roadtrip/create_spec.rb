@@ -20,7 +20,6 @@ RSpec.describe 'create' do
 
       road_trip = JSON.parse(response.body, symbolize_names: true)
 
-      require 'pry'; binding.pry
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -59,7 +58,6 @@ RSpec.describe 'create' do
 
       road_trip = JSON.parse(response.body, symbolize_names: true)
 
-      require 'pry'; binding.pry
 
       expect(response.body).to eq("{\"errors\":\"Invalid API key.\"}")
       expect(response.status).to eq(401)
