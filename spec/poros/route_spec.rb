@@ -6,7 +6,7 @@ describe 'it instantiates and returns route' do
     data = MapquestService.get_route('Eagle,ID', 'Denver,CO')
     forecast = CoordinatesFacade.ending_location_forecast("Denver,CO")
 
-    route = Route.new(data, forecast)
+    route = Route.new(data[:route], forecast)
 
     expect(route).to be_a(Route)
     expect(route.id).to be_nil

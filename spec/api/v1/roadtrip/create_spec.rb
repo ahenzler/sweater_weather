@@ -12,13 +12,15 @@ RSpec.describe 'create' do
 
       body = {
           "origin": "Denver,CO",
-          "destination": "Westminster,CO",
+          "destination": "London,UK",
           "api_key": "lOPbJUvhG02ABSCd12UYHlFGmFWATzbmkdsfjhakshd"
       }
 
       post '/api/v1/roadtrip', headers: headers, params: body.to_json
 
       road_trip = JSON.parse(response.body, symbolize_names: true)
+
+      require 'pry'; binding.pry
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -56,6 +58,8 @@ RSpec.describe 'create' do
       post '/api/v1/roadtrip', headers: headers, params: body.to_json
 
       road_trip = JSON.parse(response.body, symbolize_names: true)
+
+      require 'pry'; binding.pry
 
       expect(response.body).to eq("{\"errors\":\"Invalid API key.\"}")
       expect(response.status).to eq(401)

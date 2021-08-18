@@ -9,6 +9,7 @@ RSpec.describe 'create' do
               "password_confirmation": "testing123"}
 
       post '/api/v1/users', headers: headers, params: body.to_json
+
       user = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to be_successful
@@ -43,22 +44,22 @@ RSpec.describe 'create' do
     it 'returns an error if duplicated email is used' , :vcr do
       headers = {'Content-Type' => "application/json", 'Accept' => "application/json"}
       body = {"email": "test@testing.com",
-              "password": "testing123",
-              "password_confirmation": "testing123"}
+        "password": "testing123",
+        "password_confirmation": "testing123"}
 
-      post '/api/v1/users', headers: headers, params: body.to_json
-      user1 = JSON.parse(response.body, symbolize_names: true)
+        post '/api/v1/users', headers: headers, params: body.to_json
+        user1 = JSON.parse(response.body, symbolize_names: true)
 
-      expect(response).to be_successful
-      expect(response.status).to eq(201)
+        expect(response).to be_successful
+        expect(response.status).to eq(201)
 
-      headers = {'Content-Type' => "application/json", 'Accept' => "application/json"}
-      body = {"email": "test@testing.com",
-              "password": "testing321",
-              "password_confirmation": "testing321"}
+        headers = {'Content-Type' => "application/json", 'Accept' => "application/json"}
+        body = {"email": "test@testing.com",
+          "password": "testing321",
+          "password_confirmation": "testing321"}
 
-      post '/api/v1/users', headers: headers, params: body.to_json
-      user2 = JSON.parse(response.body, symbolize_names: true)
+          post '/api/v1/users', headers: headers, params: body.to_json
+          user2 = JSON.parse(response.body, symbolize_names: true)
 
       expect(response.body).to eq("{\"errors\":\"That email is already in use.\"}")
       expect(response.status).to eq(409)
