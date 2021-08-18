@@ -4,7 +4,7 @@ rbenv:
 services:
   - postgresql
 before_script:
-  - bundle install
+  - bundle config set --local deployment 'true'
   - bundle exec rake db:create
   - bundle exec rake db:migrate
 script:
