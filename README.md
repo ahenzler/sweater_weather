@@ -1,85 +1,49 @@
-# README
+# Sweater Weather
+## About 
+Project Description
+You are a back-end developer working on a team that is building an application to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Your team is working in a service-oriented architecture. The front-end will communicate with your back-end through an API. Your job is to expose that API that satisfies the front-end team’s requirements
 
-Things you may want to cover:
+## Versions
 
-* Ruby version
+- Ruby 2.7.2
 
-* System dependencies
+- Rails 5.2.6
 
-* Configuration
+## Initial Setup
+1. Fork and Clone the repo
+2. Install gem packages: `bundle install`
+3. Setup the database: `rails db:create`
+4. Run migrations: ` rails db:migrate`
+5. Install the Figaro gem: `bundle exec figaro install`
+6. Create an account with [Open Weather Map](https://home.openweathermap.org/users/sign_up) and request an API key
+7. Create an account with [Map Quest API](https://developer.mapquest.com/plan_purchase/steps/business_edition/business_edition_free/register)
+8. Create an account with [Unsplash API](https://unsplash.com/join)
+9. Add your API key to the `application.yml` created by Figaro:
+  ```rb
+  OPENWEATHER: your_api_key
+  MAPQUEST: your_api_key
+  BACKGROUND: your_api_key
+  ```
 
-* Database creation
+## Gems Used
+Testing
+* [rspec-rails](https://github.com/rspec/rspec-rails)
+* [capybara](https://github.com/teamcapybara/capybara)
+* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
+* [simplecov](https://github.com/simplecov-ruby/simplecov)
+* [webmock](https://github.com/bblimke/webmock)
+* [vcr](https://github.com/vcr/vcr)
 
-* Database initialization
+API Consumption
+* [faraday](https://github.com/lostisland/faraday)
+* [figaro](https://github.com/laserlemon/figaro)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## How To Run Rspec Tests
+Run `bundle exec rspec` to run the test suite
 
 
-Final Assessment
+## Author
 
-Instructions:
-Create a 'final' branch off of your Sweater Weather.
-As you work, you should commit to this branch every 15 minutes.
-DO NOT push your code to your GitHub repo until the end of the 3 hour assessment, unless otherwise directed by instructors
-Complete the user story below.
-
-You should:
-TDD all of your work
-Prioritize getting your code functional before attempting any refactors
-Write/refactor your code to achieve good code quality
-
-Assignment:
-
-You will be using the “Open Brewery DB” to find a quantity of breweries in a destination city that the user provides. Presume that your user will give a known “good” location. (you can handle edge cases later)
-
-Your endpoint should follow this format:
-GET /api/v1/breweries?location=denver,co&quantity=5
-please do not deviate from the names of the endpoint or query parameter, be sure it is called “breweries” and “location” and “quantity”, respectively
-quantity should be a positive integer greater than 0
-
-Your API will return:
-the destination city
-the forecast in that city right now
-breweries in the city
-
-Your response should be in the format below:
-
-GET /api/v1/breweries?location=denver,co&quantity=5
-
-{
-  "data": {
-    "id": "null",
-    "type": "breweries",
-    "attributes": {
-      "destination": "denver,co",
-      "forecast": {
-        "summary": "Cloudy with a chance of meatballs",
-        "temperature": "83 F"
-      },
-      "breweries": [
-        {
-          "id": 10129,
-          "name": "Denver Beer Co Olde Town Arvada",
-          "brewery_type": "micro"
-        },
-        {
-          "id": 12906,
-          "name": "New Image Brewing Co",
-          "brewery_type": "brewpub"
-        },
-        { ... same format for breweries 3, 4 and 5 ... }
-      ]
-    }
-  }
-}
-
-it's okay to use the by_dist endpoint.
+- Alicia Henzler - [ahenzler](https://github.com/ahenzler)
