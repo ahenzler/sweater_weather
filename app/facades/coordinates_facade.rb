@@ -9,7 +9,7 @@ class CoordinatesFacade
     def get_route(starting_location, ending_location)
       json = MapquestService.get_route(starting_location, ending_location)
       if json[:info][:statuscode] != 0
-        # render json: { errors: "Invalid Route." }, status: :bad_request
+        render json: { errors: "Invalid Route." }, status: :bad_request
       else
         data = json[:route]
         forecast = ending_location_forecast(ending_location)
