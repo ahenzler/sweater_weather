@@ -13,7 +13,7 @@ RSpec.describe 'Brewery' do
     expect(boise.destination).to eq('boise,id')
     expect(boise.breweries).to be_a(Array)
     expect(boise.breweries.length).to be(5)
-    expect(boise.breweries.first[:id]).to be_a(Integer)
+    expect(boise.breweries.first[:id]).to be_a(String)
     expect(boise.breweries.first[:name]).to be_a(String)
     expect(boise.breweries.first[:brewery_type]).to be_a(String)
     expect(boise.forecast).to be_a(Hash)
