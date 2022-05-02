@@ -53,4 +53,57 @@ http_interactions:
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Pittsbugh,PA"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Pittsburgh","adminArea5Type":"City","adminArea4":"Allegheny
         County","adminArea4Type":"County","adminArea3":"PA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039780","unknownInput":"","type":"s","latLng":{"lat":40.442169,"lng":-79.994945},"displayLatLng":{"lat":40.442169,"lng":-79.994945},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=40.442169,-79.994945|marker-sm-50318A-1&scalebar=true&zoom=12&rand=141134412"}]}]}'
   recorded_at: Wed, 11 Aug 2021 21:03:30 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=a8k7m6XH0vJScGY82bDnXhVwsY1cU4TG&location=Pittsbugh,PA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.7.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 02 May 2022 02:57:03 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1037'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 02 May 2022 02:57:03 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=60802E749F5F579B658D1787F77E6E23; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Pittsbugh,PA"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Pittsburgh","adminArea5Type":"City","adminArea4":"Allegheny
+        County","adminArea4Type":"County","adminArea3":"PA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039780","unknownInput":"","type":"s","latLng":{"lat":40.442169,"lng":-79.994945},"displayLatLng":{"lat":40.442169,"lng":-79.994945},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=a8k7m6XH0vJScGY82bDnXhVwsY1cU4TG&type=map&size=225,160&locations=40.442169,-79.994945|marker-sm-50318A-1&scalebar=true&zoom=12&rand=98188348"}]}]}'
+  recorded_at: Mon, 02 May 2022 02:57:02 GMT
 recorded_with: VCR 6.0.0

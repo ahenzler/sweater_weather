@@ -54,4 +54,58 @@ http_interactions:
         York City,NY"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"New
         York","adminArea5Type":"City","adminArea4":"New York County","adminArea4Type":"County","adminArea3":"NY","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040974","unknownInput":"","type":"s","latLng":{"lat":40.713054,"lng":-74.007228},"displayLatLng":{"lat":40.713054,"lng":-74.007228},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=lOPbJUvhG02ABSCd12UYHlFGmFWATzbm&type=map&size=225,160&locations=40.713054,-74.007228|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-785979830"}]}]}'
   recorded_at: Wed, 11 Aug 2021 21:03:30 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=a8k7m6XH0vJScGY82bDnXhVwsY1cU4TG&location=New%20York%20City,NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.7.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 02 May 2022 02:57:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1040'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 02 May 2022 02:57:02 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=BB62EB0712D6CD6545DB233426E2ADE1; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"New
+        York City,NY"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"New
+        York","adminArea5Type":"City","adminArea4":"New York County","adminArea4Type":"County","adminArea3":"NY","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040974","unknownInput":"","type":"s","latLng":{"lat":40.713054,"lng":-74.007228},"displayLatLng":{"lat":40.713054,"lng":-74.007228},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=a8k7m6XH0vJScGY82bDnXhVwsY1cU4TG&type=map&size=225,160&locations=40.713054,-74.007228|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-293648438"}]}]}'
+  recorded_at: Mon, 02 May 2022 02:57:02 GMT
 recorded_with: VCR 6.0.0
